@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
 .Base{
     background-color: black;
     width: 95%;
@@ -5,7 +8,6 @@
 
     display: flex;
     align-items: baseline;
-
 
     /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
     $bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
@@ -60,11 +62,10 @@
 
         display: flex;
         flex-direction: column;
-        align-items: baseline;
-
+        padding-left: 5%;
+        padding-top: 5%;
         .header {
-            margin-left: 10%;
-            margin-top: 5%;
+
             .apresentacao {
 
                 h2 {
@@ -79,13 +80,15 @@
                     border: 2px solid black;
                     padding: 2px 5px;
                     border-radius: 10px;
+                    max-width: 250px;
                 }
             }
         }
 
         .conteudo {
             width: 100%;
-            margin-top: 5%;
+            margin-top: 2%;
+
             p{
                 font-size: 45%;
                 font-family: 'Kanit', sans-serif;
@@ -122,12 +125,12 @@
                     margin-top: 4%;
                 }
                 .Tenologias {
-                    width: 80%;
+                    width: 100%;
                     display: flex;
                     justify-content: space-between;
                     .tecnos {
                         aspect-ratio: 1/1;
-                        width: 6%;
+                        width: 9%;
                         height: auto;
                         &:hover {
                             transform: scale(1.1);
@@ -136,6 +139,305 @@
                 }
                 
             }
+
+            .repos{
+                width: 100%;
+                min-height: 300px;
+                max-height: 700px;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                overflow-y: auto;
+
+
+                .view {
+                    width: 300px;
+                    height:290px;
+                    margin-bottom: 10px;
+                    padding: 3px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: rgb(226, 226, 226);
+                    border-bottom: 3px solid rgb(226, 226, 226);
+                    border-radius: 0 0 5px 5px;
+
+                    &:hover {
+                        border-bottom: 3px solid rgb(228, 98, 98);
+                        transform: scale(1.02);
+                    }
+    
+                    .view-left {
+                        width: 80%;
+                        min-width: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        h3 {
+                            font-size: 50%;
+                            text-align: center;
+
+                            font-family: 'Bebas Neue', sans-serif;
+                        }
+                    }
+
+                    .view-right {
+                        width: 80%;
+                        min-width: 180px;
+                        height: 130px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+    
+                        .languages {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 3px;
+                            min-width: 200px;
+                            .l {
+                                display: flex;
+                                flex-wrap: wrap;
+                                width: 100%;
+                                p {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 30%;
+                                    svg {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+                            }
+    
+                            .barra-progressão {
+                                
+                                width: 100%;
+                                height: 10px;
+                                border-radius: 4px;
+                                display: flex;
+                                align-items: baseline;
+                                justify-content: baseline;
+                                .toolt {
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                }
+                                div {
+                                    height: 100%;
+                                    border-radius: 30px;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+                            
+                            
+                        }
+
+                        .descricao {
+                            width: 100%;
+                            height: 130px;
+                            margin: 5px 0;
+                            p {
+                                padding: 5px;
+                                font-size: 35%;
+                                width: 100%;
+                                height: 130px;
+                                overflow: hidden;
+                                text-overflow: 'ellipsis';
+                                font-family: 'Belanosima', sans-serif;
+                            }
+                        }
+                        .linkRepo {
+                                background-color: #e1ecf4;
+                                border-radius: 3px;
+                                border: 1px solid #7aa7c7;
+                                box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+                                box-sizing: border-box;
+                                color: #39739d;
+                                cursor: pointer;
+                                display: inline-block;
+                                font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 1.15385;
+                                margin: 0;
+                                outline: none;
+                                padding: 8px .8em;
+                                position: relative;
+                                text-align: center;
+                                text-decoration: none;
+                                user-select: none;
+                                -webkit-user-select: none;
+                                touch-action: manipulation;
+                                vertical-align: baseline;
+                                white-space: nowrap;
+                            
+                            &:hover,
+                            &:focus {
+                                background-color: #b3d3ea;
+                                color: #2c5777;
+                            }
+                            
+                            &:focus {
+                                box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+                            }
+                            
+                            &:active {
+                                background-color: #a0c7e4;
+                                box-shadow: none;
+                                color: #2c5777;
+                            }
+                            svg {
+                                aspect-ratio: 1/1;
+                                width: 30px;
+                                height: 30px;
+                                margin-left: auto;
+                                color: black;
+                            }
+                        }
+                    }
+                    
+                }
+                
+
+            }
+
+            .percurso {
+                width: 100%;
+                height: 700px;
+                display: flex;
+                justify-content: space-around;
+                .profissional {
+                    width: 45%;
+                    min-width: 320px;
+                    max-width: 900px;
+                    height: 100%;
+                    overflow: hidden;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: start;
+                        width: 100%;
+                    }
+                    li {
+
+                        background-color: rgb(241, 241, 241);
+                        padding: 5px;
+                        width: 320px;
+                        height: auto;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 0 0 5px 5px;
+                        border-bottom: 3px solid red;
+                    }
+                    h3{
+                        font-size: 40%;
+                        margin-bottom: 3px;
+                        font-weight: bold;
+                    }
+                    q {
+                        font-size: 30%;
+                        margin-bottom: 3px;
+                    }
+                    p {
+                        font-size: 30%;
+                        margin-bottom: 3px;
+                    }
+                }
+                .estudo {
+                    width: 45%;
+                    height: 100%;
+                    ul {
+                        width: 100%;
+                        border-left: 3px solid black;
+                        li{
+                            max-height: 300px;
+                            min-width: 300px;
+                            display: flex;
+                            margin: 10px 0;
+                            padding: 0 5px;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                    }
+                    h3{
+                        list-style: circle;
+                        font-size: 40%;
+                        margin-bottom: 3px;
+                        font-weight: bold;
+                        display: flex;
+                        flex-direction: column;
+                        
+                    }
+                    q {
+                        font-size: 60%;
+                        margin-bottom: 3px;
+                    }
+                    p {
+                        font-size: 30%;
+                        margin-bottom: 3px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .mainConteudo {
+                width: 100%;
+
+                display: flex;
+                align-items: start;
+                
+                img {
+                    aspect-ratio: 1/1;
+                    width: 240px;
+                    border-radius: 50%;
+                    margin-right: 1%;
+                }
+                h3 {
+                    font-size: 60%;
+                }
+                .aboutConteudo {
+                    width: 79%;
+                
+                    .gostos {
+                        display: flex;
+                        flex-wrap: wrap;
+                        
+                        p{
+                            font-size: 40%;
+                            margin-right: 5px;
+                            margin-bottom: 3px;
+                            padding: 5px 10px;
+                            border: 2px solid silver;
+                            border-radius: 10px;
+                        }
+                    }
+                    .resume{
+                        margin: 10px 0;
+                        width: 60%;
+                    }
+                    .redes {
+                        a{
+                            text-decoration: none;
+                            .insta{
+                                fill: orange;
+                            }
+                            .lin{
+                                fill:blue;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 30%;
+                    }
+                }
+                
+            }
+
         }
     }
 

@@ -17,8 +17,16 @@
 }
 ul {
     font-family: 'Kanit', sans-serif;
+    list-style: none;
 }
 
 h1,h2 {
     font-family: 'Anton', sans-serif;
+}
+h1, h2, h3, p {
+    word-wrap: break-word;
+}
+.loadImage{
+    width: 100px;
+    height: 100px;
 }
