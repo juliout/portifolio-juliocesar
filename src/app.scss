@@ -126,6 +126,7 @@
                 }
                 .Tenologias {
                     width: 100%;
+                    max-width: 800px;
                     display: flex;
                     justify-content: space-between;
                     .tecnos {
@@ -325,7 +326,7 @@
 
                         background-color: rgb(241, 241, 241);
                         padding: 5px;
-                        width: 320px;
+                        width: 300px;
                         height: auto;
                         margin-right: 10px;
                         margin-bottom: 10px;
@@ -356,12 +357,14 @@
                         border-left: 3px solid black;
                         li{
                             max-height: 300px;
-                            min-width: 300px;
+                            max-width: 500px;
                             display: flex;
+                            flex-wrap: wrap;
                             margin: 10px 0;
                             padding: 0 5px;
                             justify-content: space-between;
                             align-items: center;
+                            word-wrap: break-word;
                         }
                     }
                     h3{
@@ -371,6 +374,7 @@
                         font-weight: bold;
                         display: flex;
                         flex-direction: column;
+                        word-wrap: break-word;
                         
                     }
                     q {
@@ -378,6 +382,7 @@
                         margin-bottom: 3px;
                     }
                     p {
+                        width: 70%;
                         font-size: 30%;
                         margin-bottom: 3px;
                         font-weight: bold;
@@ -443,6 +448,7 @@
 
     .menu {
         width: 10%;
+        min-width: 50px;
         ul {
             list-style: none;
             list-style-type: none;
@@ -458,8 +464,9 @@
                 font-size: 45%;
                 &:hover {
                     background-color: rgba(235, 235, 235, 0.432);
-                    cursor: pointer;
                     border-right: 2px solid black;
+                    cursor: pointer;
+                    
                     font-weight: bold;
                 }
             }

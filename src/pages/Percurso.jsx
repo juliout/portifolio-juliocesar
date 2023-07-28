@@ -38,12 +38,12 @@ export default function Percurso() {
     {
       nome:"Digital House Full-Stack",
       data:"02/2021 - 09/2021",
-      exp:"aulas online, com aprendizado focado em HTML, CSS, JavaScript. NodeJs, MySQL, ReactJs, Git, GitHub projeto feito em grupo, deploy, builds de projetos em locais externos."
+      exp:"HTML, CSS, JavaScript. NodeJs, MySQL, ReactJs, Git, GitHub."
     },
     {
       nome: "Curso Udemy ReactJs",
       data: "-",
-      exp: "videos aulas com foco em JavaScript Es6, ReactJs, Context, Firebase, Hooks, mongodb, com projetos desenvolvidos com as tecnologias ensinadas"
+      exp: "JavaScript Es6, ReactJs, Context, Firebase, Hooks, mongodb."
     },
   ]
 
